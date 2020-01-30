@@ -340,13 +340,14 @@ label park_choice:
             jump park_choice
 
         "Check out the woods":
+            show bg forest
             jump woods_choice
 label woods_choice:
     menu:
         "What should I do?"
         "Climb a tree" if climbed_tree == False:
             narrator "tree is climbed"
-            climbed_tree == False
+            $ climbed_tree = True
             jump woods_choice
         "Grab a stick" if grabbed_stick == False:
             # look for a stick

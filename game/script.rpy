@@ -340,6 +340,7 @@ label park_choice:
 
         "Check out the woods":
             show bg forest
+            
             jump woods_choice
 label woods_choice:
     menu:

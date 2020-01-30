@@ -2,9 +2,157 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 348: expected statement.
-    climbed_tree == False
-                 ^
+The label chapter0 is defined twice, at
+  File "game/chapter0.rpy", line 1 and
+  File "game/images/chapter0.rpyc", line 1.
+
+The label naming is defined twice, at
+  File "game/chapter0.rpy", line 22 and
+  File "game/images/chapter0.rpyc", line 22.
+
+The label prologue_start is defined twice, at
+  File "game/chapter0.rpy", line 72 and
+  File "game/images/chapter0.rpyc", line 72.
+
+The label bus is defined twice, at
+  File "game/chapter0.rpy", line 94 and
+  File "game/images/chapter0.rpyc", line 94.
+
+The label bus_choice is defined twice, at
+  File "game/chapter0.rpy", line 109 and
+  File "game/images/chapter0.rpyc", line 109.
+
+The label arcade is defined twice, at
+  File "game/chapter0.rpy", line 124 and
+  File "game/images/chapter0.rpyc", line 124.
+
+The label arcade_choice is defined twice, at
+  File "game/chapter0.rpy", line 137 and
+  File "game/images/chapter0.rpyc", line 137.
+
+The label arcade_shooting is defined twice, at
+  File "game/chapter0.rpy", line 172 and
+  File "game/images/chapter0.rpyc", line 172.
+
+The label arcade_racing is defined twice, at
+  File "game/chapter0.rpy", line 206 and
+  File "game/images/chapter0.rpyc", line 206.
+
+The label arcade_dancing is defined twice, at
+  File "game/chapter0.rpy", line 222 and
+  File "game/images/chapter0.rpyc", line 222.
+
+The label nua is defined twice, at
+  File "game/chapter0.rpy", line 240 and
+  File "game/images/chapter0.rpyc", line 240.
+
+The label annoying_shooting is defined twice, at
+  File "game/chapter0.rpy", line 245 and
+  File "game/images/chapter0.rpyc", line 245.
+
+The label annoying_racing is defined twice, at
+  File "game/chapter0.rpy", line 250 and
+  File "game/images/chapter0.rpyc", line 250.
+
+The label annoying_dancing is defined twice, at
+  File "game/chapter0.rpy", line 257 and
+  File "game/images/chapter0.rpyc", line 257.
+
+The label annoying_guy is defined twice, at
+  File "game/chapter0.rpy", line 264 and
+  File "game/images/chapter0.rpyc", line 264.
+
+The label park is defined twice, at
+  File "game/chapter0.rpy", line 291 and
+  File "game/images/chapter0.rpyc", line 291.
+
+The label park_choice is defined twice, at
+  File "game/chapter0.rpy", line 299 and
+  File "game/images/chapter0.rpyc", line 299.
+
+The label woods_choice is defined twice, at
+  File "game/chapter0.rpy", line 311 and
+  File "game/images/chapter0.rpyc", line 311.
+
+The label end is defined twice, at
+  File "game/chapter0.rpy", line 329 and
+  File "game/images/chapter0.rpyc", line 329.
+
+The label naming is defined twice, at
+  File "game/images/chapter0.rpyc", line 22 and
+  File "game/images/chapter00.rpyc", line 22.
+
+The label prologue_start is defined twice, at
+  File "game/images/chapter0.rpyc", line 72 and
+  File "game/images/chapter00.rpyc", line 72.
+
+The label bus is defined twice, at
+  File "game/images/chapter0.rpyc", line 94 and
+  File "game/images/chapter00.rpyc", line 94.
+
+The label bus_choice is defined twice, at
+  File "game/images/chapter0.rpyc", line 109 and
+  File "game/images/chapter00.rpyc", line 109.
+
+The label arcade is defined twice, at
+  File "game/images/chapter0.rpyc", line 124 and
+  File "game/images/chapter00.rpyc", line 124.
+
+The label arcade_choice is defined twice, at
+  File "game/images/chapter0.rpyc", line 137 and
+  File "game/images/chapter00.rpyc", line 137.
+
+The label arcade_shooting is defined twice, at
+  File "game/images/chapter0.rpyc", line 172 and
+  File "game/images/chapter00.rpyc", line 172.
+
+The label arcade_racing is defined twice, at
+  File "game/images/chapter0.rpyc", line 206 and
+  File "game/images/chapter00.rpyc", line 206.
+
+The label arcade_dancing is defined twice, at
+  File "game/images/chapter0.rpyc", line 222 and
+  File "game/images/chapter00.rpyc", line 222.
+
+The label nua is defined twice, at
+  File "game/images/chapter0.rpyc", line 240 and
+  File "game/images/chapter00.rpyc", line 240.
+
+The label annoying_shooting is defined twice, at
+  File "game/images/chapter0.rpyc", line 245 and
+  File "game/images/chapter00.rpyc", line 245.
+
+The label annoying_racing is defined twice, at
+  File "game/images/chapter0.rpyc", line 250 and
+  File "game/images/chapter00.rpyc", line 250.
+
+The label annoying_dancing is defined twice, at
+  File "game/images/chapter0.rpyc", line 257 and
+  File "game/images/chapter00.rpyc", line 257.
+
+The label annoying_guy is defined twice, at
+  File "game/images/chapter0.rpyc", line 264 and
+  File "game/images/chapter00.rpyc", line 264.
+
+The label park is defined twice, at
+  File "game/images/chapter0.rpyc", line 291 and
+  File "game/images/chapter00.rpyc", line 291.
+
+The label park_choice is defined twice, at
+  File "game/images/chapter0.rpyc", line 299 and
+  File "game/images/chapter00.rpyc", line 299.
+
+The label woods_choice is defined twice, at
+  File "game/images/chapter0.rpyc", line 311 and
+  File "game/images/chapter00.rpyc", line 311.
+
+The label end is defined twice, at
+  File "game/images/chapter0.rpyc", line 329 and
+  File "game/images/chapter00.rpyc", line 329.
+
+The label start is defined twice, at
+  File "game/images/chapter00.rpyc", line 1 and
+  File "game/script.rpy", line 33.
 
 Ren'Py Version: Ren'Py 7.3.3.568
-Wed Jan 29 20:28:57 2020
+Wed Jan 29 22:41:16 2020

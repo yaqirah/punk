@@ -1,5 +1,6 @@
 ﻿# The script of the game goes in this file.
 
+#is this thing on? ~ Mercy
 # Declare the main character
 define p = Character("punk", dynamic=True, image="punk", who_color="#D999F0")
 define b = Character("Brian Noonan", image="lofi", who_color="#852929")

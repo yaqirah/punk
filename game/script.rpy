@@ -345,7 +345,7 @@ label woods_choice:
         "What should I do?"
         "Climb a tree" if climbed_tree == False:
             narrator "tree is climbed"
-            climbed_tree == False
+            $ climbed_tree = True
             jump woods_choice
         "Grab a stick" if grabbed_stick == False:
             # look for a stick

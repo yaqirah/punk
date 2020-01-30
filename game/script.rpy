@@ -54,7 +54,7 @@ label start:
 
 label naming:
     scene bg building
-    play music punk_theme 2.0 fadeout 1.0
+    play music punk_theme fadein 2.0 fadeout 1.0
 
     show punk
 
@@ -126,7 +126,7 @@ label prologue:
 
 label bus:
     show bg bus
-    play music filling_in 2.0 fadeout 1.0
+    play music filling_in fadein 2.0 fadeout 1.0
 
     narrator "I got on the bus, not sure where exactly I wanted to go. Figure I'll just ride it until we're near something sort of interesting. The bus route covers a decent amount of town at least, which is good because teenagers can't even get a car in this place."
     narrator "Heard there was some accident some number of years back so they raised the age limit to drive, super dumb."
@@ -156,7 +156,7 @@ label bus_choice:
             jump end
 label arcade:
     show bg arcade
-    play music an_end_to_the_crazy 2.0 fadeout 1.0
+    play music an_end_to_the_crazy fadein 2.0 fadeout 1.0
     default tokens = 5
     default start_tokens = tokens
     default lofi_appeared = False
@@ -200,7 +200,7 @@ label arcade_choice:
         "Get out of this place before that nerd comes back" if lofi_appeared == True:
             # Go back to the bus
             show bg bus
-            play music filling_loop 2.0 fadeout 1.0
+            play music filling_loop fadein 2.0 fadeout 1.0
             jump bus_choice
 label arcade_shooting:
     $ current_game = "PANIC BANK"
@@ -276,19 +276,19 @@ label nua:
     $ nua_lore = True
     jump arcade_choice
 label annoying_shooting:
-    play music lofi_theme 2.0 fadeout 1.0
+    play music lofi_theme fadein 2.0 fadeout 1.0
     show lofi gun
     narrator "I was just minding my own business, about to start this shooting game, when this guy just walked up and lifted the other gun up, holding it in front of him."
     jump annoying_guy
 label annoying_racing:
-    play music lofi_theme 2.0 fadeout 1.0
+    play music lofi_theme fadein 2.0 fadeout 1.0
     show lofi
 
     narrator "As I sat down to play this racing game, this nerd came up behind me and leaned over my shoulder. Personal space, buddy!"
 
     jump annoying_guy
 label annoying_dancing:
-    play music lofi_theme 2.0 fadeout 1.0
+    play music lofi_theme fadein 2.0 fadeout 1.0
     show lofi
 
     narrator "I wonder, are there any songs in this game that I haven't played? Of course not, I know this game like the back of my hand. As I was browsing through the song list, this guy came up behind me."
@@ -319,7 +319,7 @@ label annoying_guy:
             $ tokens += 2
             jump annoying_guy
     hide lofi
-    play music an_end_to_the_crazy 2.0 fadeout 1.0
+    play music an_end_to_the_crazy fadein 2.0 fadeout 1.0
     jump arcade_choice
 label park:
     show bg park2
@@ -330,26 +330,38 @@ label park:
 
     narrator "So we at the park"
 label park_choice:
+    #menu:
+    #    "What should I do?"
+
+    #    "Chill on the swings" if swings = False:
+    #        # TODO: ADD TEXT
+    #        narrator ""
+    #    "Check out the woods":
+    #        jump woods_choice
     menu:
-        "Chill on the swings" if swings = False:
+        "What should I do next?"
+
+        "Chill on the swings" if swings == False:
             # TODO: ADD TEXT
-            narrator ""
+            $ swings = True
+            jump park_choice
+
         "Check out the woods":
             jump woods_choice
 label woods_choice:
-    menu:
-        "Climb a tree" if climbed_tree = False:
-            narrator "tree is climbed"
-            jump woods_choice
-        "Grab a stick" if grabbed_stick = False:
-            # look for a stick
-            narrator ""
-            # go deep in woods
-            # see fairy
-        "Get out of here" if fairy_appeared:
-            # Go back to the bus
-            show bg bus
-            jump bus_choice
+    #menu:
+    #    "What should I do?"
+    #    "Climb a tree" if climbed_tree = False:
+    #        narrator "tree is climbed"
+    #        jump woods_choice
+    #    "Grab a stick" if grabbed_stick = False:
+    #        # look for a stick
+    #        # go deep in woods
+    #        # see fairy
+    #    "Get out of here" if fairy_appeared:
+    #        # Go back to the bus
+    #        show bg bus
+    #        jump bus_choice
 label end:
     scene black with Fade(1.5, 1.0, 0)
 

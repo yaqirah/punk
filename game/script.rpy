@@ -330,14 +330,6 @@ label park:
 
     narrator "So we at the park"
 label park_choice:
-    #menu:
-    #    "What should I do?"
-
-    #    "Chill on the swings" if swings = False:
-    #        # TODO: ADD TEXT
-    #        narrator ""
-    #    "Check out the woods":
-    #        jump woods_choice
     menu:
         "What should I do next?"
 
@@ -349,19 +341,23 @@ label park_choice:
         "Check out the woods":
             jump woods_choice
 label woods_choice:
-    #menu:
-    #    "What should I do?"
-    #    "Climb a tree" if climbed_tree = False:
-    #        narrator "tree is climbed"
-    #        jump woods_choice
-    #    "Grab a stick" if grabbed_stick = False:
-    #        # look for a stick
-    #        # go deep in woods
-    #        # see fairy
-    #    "Get out of here" if fairy_appeared:
-    #        # Go back to the bus
-    #        show bg bus
-    #        jump bus_choice
+    menu:
+        "What should I do?"
+        "Climb a tree" if climbed_tree == False:
+            narrator "tree is climbed"
+            climbed_tree == False
+            jump woods_choice
+        "Grab a stick" if grabbed_stick == False:
+            # look for a stick
+            # go deep in woods
+            # see fairy
+            $ grabbed_stick = True
+            $ fairy_appeared = True
+            jump woods_choice
+        "Get out of here" if fairy_appeared:
+            #Go back to the bus
+            show bg bus
+            jump bus_choice
 label end:
     scene black with Fade(1.5, 1.0, 0)
 

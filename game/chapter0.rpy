@@ -167,7 +167,7 @@ label arcade_choice:
             if lofi_appeared == False:
                 show lofi
                 play music lofi_theme fadein 2.0 fadeout 1.0
-                
+
                 jump annoying_guy
         "Get out of this place before that nerd comes back" if lofi_appeared == True:
             # Go back to the bus
